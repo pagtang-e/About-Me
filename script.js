@@ -40,7 +40,7 @@ popUpClose.addEventListener("click", ()=>{
 
 function getScrollAmount() {
 	let contentWidth = content.scrollWidth;
-	return -(contentWidth - window.innerWidth);
+	return -(contentWidth - window.innerWidth + 100);
 }
 
 

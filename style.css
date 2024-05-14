@@ -1,5 +1,6 @@
 body{
     background-color: #121212;
+    width: 100vw;
 }
 
 header{
@@ -176,7 +177,7 @@ margin-left: 30px;
     color: #fff;
     text-decoration: underline;
     font-family: "Montserrat", sans-serif;
-    font-size: 10vh;
+    font-size: 5vw;
     margin: 2rem;
     padding-top: 80px;
     font-weight: 500;
@@ -504,5 +505,103 @@ nav a::after{
         box-sizing: border-box;
        padding: 15rem;
     }
+
     
+}
+@media screen and (max-width: 600px) {
+
+    .kontakt h2{
+        display: none;
+    }
+    .kontakt .header p:first-child{
+        font-size: 10vw;
+    }
+    header .tittle{
+        width: 100vw;
+    }
+    header h1{
+        font-size: 30vw;
+        text-align: center;
+    }
+    .gallery img:nth-child(2),  .gallery img:nth-child(3), .gallery img:nth-child(4){
+        display: none;
+    }
+    .gallery img:first-child{
+        transform: rotate(0);
+       margin: 0;
+      
+    }
+    .gallery{
+        width: 250px;
+    }
+    #oMnie h2{
+        font-size: 20vw;
+
+    }
+    
+}
+@media  screen and (max-width: 900px){
+    footer{
+        flex-direction: column;
+        padding-block: 2rem;
+    }
+    
+    .kontakt > .top{
+        flex-direction: column;
+    }
+
+}
+@media  screen and (max-width: 1200px){
+
+    .zainteresowania > h2{
+        font-size: 10vw;
+    }
+
+    body{
+        margin: 0;
+    }
+    nav ul{
+        display: none;
+    }
+
+
+ nav a::after{
+        border-radius: 5vw;
+    }
+
+    .text p{
+        display: none;
+    }
+
+    #oMnie{
+        box-sizing: border-box;
+        rotate: 0deg;
+        width: 100vw;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+    }
+    .gallery{
+        flex-basis: 400px;
+        height: 500px;
+    }
+    #oMnie article{
+    
+       width: 100%;
+        display: flex;
+      
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        
+    
+    }
+.zainteresowania{
+    margin-top: 0;
+}
+.zainteresowania::before{
+    height: 0;
+}
+
 }

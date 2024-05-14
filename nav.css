@@ -112,7 +112,7 @@ nav .btn:hover{
     top: 40px;
     right: 2%;
     overflow: hidden;
-    z-index: 100;
+    z-index: 10;
     mix-blend-mode: exclusion;
    
     }
