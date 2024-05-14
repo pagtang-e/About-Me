@@ -4,6 +4,14 @@ const popUpClose = document.querySelector(".close");
 const popUpWindow = document.querySelector(".popUpForm")
 const HamburgerTogle = document.querySelector(".hamburger");
 const menu = document.querySelector("nav ul");
+const contactScroll = document.querySelector("nav .btn ");
+
+
+
+popUp(popUpOpen);
+popUp(contactScroll);
+
+
 
 HamburgerTogle.addEventListener("click", ()=>{
 
@@ -12,12 +20,17 @@ HamburgerTogle.addEventListener("click", ()=>{
 
 })
 
-popUpOpen.addEventListener("click", ()=>{
+function popUp(open){
+
+open.addEventListener("click", ()=>{
 
 
 popUpWindow.style.display = "block";
 
 })
+
+
+}
 popUpClose.addEventListener("click", ()=>{
 
   
@@ -25,28 +38,36 @@ popUpClose.addEventListener("click", ()=>{
     
     })
 
-console.log(content.offsetWidth)
-
 function getScrollAmount() {
 	let contentWidth = content.scrollWidth;
 	return -(contentWidth - window.innerWidth);
 }
+
+
 
 const tween = gsap.to(content, {
 	x: getScrollAmount,
 	duration: 3,
 	ease: "none",
 });
+	
+	
 
 
-ScrollTrigger.create({
-	trigger:".zainteresowania",
-	start:"top 0",
-	end: () => `+=${getScrollAmount() * -1}`,
-	pin:true,
-	animation:tween,
-	scrub:1,
-	invalidateOnRefresh:true,
-	markers:false
-})
+
+	const tl = ScrollTrigger.create({
+		trigger:".zainteresowania",
+		start:"top 0",
+		end: () => `+=${getScrollAmount() * -1}`,
+		pin:true,
+		animation:tween,
+		scrub:1,
+		invalidateOnRefresh:true,
+		markers:false
+	})
+
+	tl.refresh();
+
+
+
 
