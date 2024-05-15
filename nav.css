@@ -98,6 +98,124 @@ nav .btn:hover{
     color: #000;
 }
 
+.popUpForm{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000070;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(32px);
+    overflow-y: scroll;
+    font-family: 'hind', sans-serif;
+    z-index: 10;
+}
+.formContainer p{
+
+margin-top: 0;
+font-weight: 300;
+
+}
+
+.formContainer{
+    margin-top: 2rem;
+    background-color: #fff;
+    width: min(75%, 1400px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 2rem;
+    justify-items: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+
+}
+
+form{
+display: flex;
+flex-direction: column;
+width: 75%;
+}
+
+form *{
+    font-size: 1rem;
+    line-height: 150%;
+   width: 100%;
+   box-sizing: border-box;
+   margin-block: 5px;
+   
+   
+}
+input, textarea{
+
+background-color: #eee;
+border: none;
+padding: 10px;
+
+}
+input::placeholder, textarea::placeholder{
+
+    color: #535353;
+    text-transform: uppercase;
+
+}
+
+.nameContainer{
+   display: flex;
+   justify-content: space-between;
+}
+.nameContainer *{
+    flex-basis: 47%;
+
+}
+textarea{
+    width: 100%;
+    resize: vertical;
+}
+input[type="submit"]{
+
+width: auto;
+padding-inline: 4rem;
+padding-block: 3px;
+border-radius: 60px;
+background-color: #000;
+color: #fff;
+margin-inline: auto;
+
+
+}
+
+.close{
+    padding-inline: 4rem;
+padding-block: 5px;
+border-radius: 60px;
+background-color: #ffffff99;
+border: 1px solid #fff;
+margin-inline: auto;
+display: block;
+margin-top: 150px;
+font-size: 1.2rem;
+color: #535353;
+}
+.close:hover{
+    color: #000;
+    background-color: #fff;
+    border-color: #00000088;
+}
+nav a:hover::after{
+    
+    width: 80%;
+}
+nav a::after{
+    left: 10%;
+}
+.hamburger{
+    display: none;
+}
+
 @media  screen and (max-width: 1200px){
 
     nav ul{

@@ -3,7 +3,7 @@ const content = document.querySelector('header');
 const tween = gsap.to(content, {
 	scale: 0.25,
 	duration: 3,
-	ease: "power2.out",
+	ease: "power3.out",
 });
 	
 	
@@ -24,3 +24,7 @@ const tween = gsap.to(content, {
 	})
   
 	tl.refresh();
+	
+	tl.addEventListener('scrollEnd',()=>{
+		tl.kill(true)
+	})
