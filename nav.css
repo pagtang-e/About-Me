@@ -215,6 +215,123 @@ nav a::after{
 .hamburger{
     display: none;
 }
+.kontakt{
+    width: 90vw;
+    padding: 4rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+  margin-right: 5rem;
+    
+}
+
+
+
+.kontakt h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 4em;
+    width: 500px;
+    text-indent: 100px;
+    margin-top: -6rem;
+    font-weight: 400;
+}
+.kontakt .header p:first-child{
+    font-size: 1.7rem;
+}
+.kontakt > .top{
+    display: flex;
+    height: 70%;
+    justify-content: space-between;
+}
+.kontakt .text{
+    flex-basis: 50%;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    
+}
+.kontakt button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-inline: 3rem;
+    border-radius: 3rem;
+    font-weight: 200;
+}
+.secondary{
+
+    border: 1px solid #000;
+    
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+    padding-inline: 3rem;
+    border-radius: 3rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 0.7rem;
+    
+    
+    
+    }
+   
+    
+    .btnContainer{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    footer{
+
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2rem;
+        
+        
+        }
+        footer ul{
+            font-size: 20px;
+            
+        }
+        footer h1{
+            font-family: "Architects Daughter", cursive;
+            font-size: 120px;
+            margin-block: 1rem;
+           
+            text-align: center;
+        }
+        footer{
+            font-family: 'montserrat', sans-serif;
+            
+        }
+        footer a{
+            color: #000;
+            text-decoration: none;
+            
+        }
+        a::after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 0;
+            background-color: #000;
+            transition: width 0.5s;
+        }
+        
+        a{
+            position: relative;
+        }
+        .secondary:hover::after{
+            width: 100px;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        
 
 @media  screen and (max-width: 1200px){
 

@@ -3,8 +3,11 @@ const popUpWindow = document.querySelector(".popUpForm")
 const HamburgerTogle = document.querySelector(".hamburger");
 const menu = document.querySelector("nav ul");
 const contactScroll = document.querySelector("nav .btn ");
+const popUpOpen = document.querySelector(".popUpOpen");
 
 
+
+popUp(popUpOpen);
 popUp(contactScroll);
 
 

@@ -1,23 +1,17 @@
 const content = document.querySelector(".inside");
-const popUpOpen = document.querySelector(".popUpOpen");
 
-
-
-
-
-popUp(popUpOpen);
 
 
 function getScrollAmount() {
 	let contentWidth = content.scrollWidth;
-	return -(contentWidth - window.innerWidth + 100);
+	return -(contentWidth - window.innerWidth+00);
 }
 
 
 
 const tween = gsap.to(content, {
 	x: getScrollAmount,
-	duration: 3,
+	duration: 1,
 	ease: "none",
 });
 	
@@ -29,9 +23,9 @@ const tween = gsap.to(content, {
 		trigger:".zainteresowania",
 		start:"top 0",
 		end: () => `+=${getScrollAmount() * -1}`,
-		pin:true,
+		pin:".zainteresowania",
 		animation:tween,
-		scrub:1,
+		scrub:0,
 		invalidateOnRefresh:true,
 		markers:false
 	})

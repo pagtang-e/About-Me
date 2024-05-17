@@ -11,7 +11,7 @@ const tween = gsap.to(content, {
 
 
 	const tl = ScrollTrigger.create({
-		trigger: ".wrapper",
+		trigger: "body",
 		start:"0",
 		end: window.innerHeight,
 		pin: ".page",
@@ -25,6 +25,4 @@ const tween = gsap.to(content, {
   
 	tl.refresh();
 	
-	tl.addEventListener('scrollEnd',()=>{
-		tl.kill(true)
-	})
+	
