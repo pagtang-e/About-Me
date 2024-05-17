@@ -123,3 +123,7 @@ video:nth-child(11){
     width: 60vw;
     grid-area: j;
 }
+body{
+    background-color: #212121;
+    color: #ffff;
+}
