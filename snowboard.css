@@ -2,7 +2,7 @@
 
 body{
     width: 100vw;
-    
+    overflow-x: hidden;
     padding: 0 ;
     margin: 0;
 }
@@ -177,9 +177,7 @@ main article:nth-of-type(2) img{
     align-self: center;
     
 }
-main article:nth-of-type(2) > p{
-    width: 40vw;
-}
+
 
 main article:nth-of-type(3){
     display: grid;
@@ -188,6 +186,7 @@ main article:nth-of-type(3){
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1.5rem;
     gap: 1.5rem;
+    overflow-x: scroll;
 }
 
 table, th, td{
@@ -230,4 +229,19 @@ footer{
 }
 .left{
     left: 1.5rem;
+}
+@media screen and (max-width: 1000px){
+
+    main article{
+        flex-direction: column;
+    }
+    main article p, main article div {
+        width: 100% ;
+        text-align: justify ;
+    }
+    main img{
+        width: 70vw !important;
+    }
+    
+
 }
