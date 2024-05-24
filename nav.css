@@ -431,7 +431,7 @@ a:hover::after{
         display: block;
     }
     form{
-        width: 100%;
+        width: 100vw;
     }
 
 }
@@ -442,5 +442,8 @@ a:hover::after{
     }
     .kontakt .header p:first-child{
         font-size: 10vw;
+    }
+    footer h1{
+        font-size: 25vw;
     }
 }

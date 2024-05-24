@@ -132,6 +132,8 @@ main{
 
 }
 body{
+    width: 100vw;
+    box-sizing: border-box;
     background-color: #212121;
     
 }
@@ -243,5 +245,37 @@ footer{
         width: 70vw !important;
     }
     
+    
+
+}
+@media screen and (max-width: 600px){
+
+
+    .tracker{
+        display: none;
+        
+    }
+    main{
+        padding-inline: 1rem;
+    }
+    main img{
+        width: 90vw !important;
+    }
+    header video{
+        display: none;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    header{
+        grid-template-areas: 
+        ". . . . ."
+        ". . . . ."
+        ". b div d ."
+        ". f div . ."
+        ". f h e ."
+        ". . . . ."
+        ;
+    }
 
 }
