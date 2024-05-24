@@ -288,12 +288,7 @@ margin-inline: 2vw;
 }
 @media screen and (max-width: 600px) {
 
-    .kontakt h2{
-        display: none;
-    }
-    .kontakt .header p:first-child{
-        font-size: 10vw;
-    }
+   
     header .tittle{
         width: 100vw;
     }
@@ -323,17 +318,7 @@ margin-inline: 2vw;
     }
     
 }
-@media  screen and (max-width: 900px){
-    footer{
-        flex-direction: column;
-        padding-block: 2rem;
-    }
-    
-    .kontakt > .top{
-        flex-direction: column;
-    }
 
-}
 @media  screen and (max-width: 1200px){
 
     .zainteresowania > h2{
@@ -343,9 +328,7 @@ margin-inline: 2vw;
     body{
         margin: 0;
     }
-    nav ul{
-        display: none;
-    }
+   
 
 
  nav a::after{

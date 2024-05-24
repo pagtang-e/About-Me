@@ -49,7 +49,7 @@ nav ul{
     margin: 0;
     display: flex;
     justify-content: space-between;
-    width: 650px;
+    width: 350px;
     height: 50px;
     font-size: 1rem;
    
@@ -386,7 +386,7 @@ nav a::after{
         border-radius: 0;
         border: none;
         padding: 20%;
-        font-size: 3vw;
+        font-size: 3rem;
     }
     nav  ul.active li{
         padding: 10px;
@@ -413,4 +413,34 @@ a{
 }
 a:hover::after{
     width: 100%;
+}
+
+@media  screen and (max-width: 900px){
+    footer{
+        flex-direction: column;
+        padding-block: 2rem;
+    }
+    
+    .kontakt > .top{
+        flex-direction: column;
+    }
+    .formContainer p{
+        display: none;
+    }
+    .formContainer{
+        display: block;
+    }
+    form{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+
+    .kontakt h2{
+        display: none;
+    }
+    .kontakt .header p:first-child{
+        font-size: 10vw;
+    }
 }
